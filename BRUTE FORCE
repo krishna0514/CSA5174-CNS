@@ -1,0 +1,47 @@
+message = 'UDZ WKLV VLGH' #encrypted message
+Letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+for key in range(len(Letters)):
+   translated = ''
+   for ch in message:
+      if ch in Letters:
+         num = Letters.find(ch)
+         num = num - key
+         if num < 0:
+            num = num + len(Letters)
+         translated = translated + Letters[num]
+      else:
+         translated = translated + ch
+   print('Hacking key is %s: %s' % (key, translated))
+
+
+
+
+
+Output:
+Hacking key 0: UDZ WKLV VLGH
+Hacking key 1: TCY VJKU UKFG
+Hacking key 2: SBX UIJT TJEF
+Hacking key 3: RAW THIS SIDE
+Hacking key 4: QZV SGHR RHCD
+Hacking key 5: PYU RFGQ QGBC
+Hacking key 6: OXT QEFP PFAB
+Hacking key 7: NWS PDEO OEZA
+Hacking key 8: MVR OCDN NDYZ
+Hacking key 9: LUQ NBCM MCXY
+Hacking key 10: KTP MABL LBWX
+Hacking key 11: JSO LZAK KAVW
+Hacking key 12: IRN KYZJ JZUV
+Hacking key 13: HQM JXYI IYTU
+Hacking key 14: GPL IWXH HXST
+Hacking key 15: FOK HVWG GWRS
+Hacking key 16: ENJ GUVF FVQR
+Hacking key 17: DMI FTUE EUPQ
+Hacking key 18: CLH ESTD DTOP
+Hacking key 19: BKG DRSC CSNO
+Hacking key 20: AJF CQRB BRMN
+Hacking key 21: ZIE BPQA AQLM
+Hacking key 22: YHD AOPZ ZPKL
+Hacking key 23: XGC ZNOY YOJK
+Hacking key 24: WFB YMNX XNIJ
+Hacking key 25: VEA XLMW WMHI
